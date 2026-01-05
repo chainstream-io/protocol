@@ -1,4 +1,4 @@
-module github.com/centrifugal/protocol
+module github.com/chainstream-io/protocol
 
 go 1.23
 

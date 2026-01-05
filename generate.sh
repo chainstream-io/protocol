@@ -26,8 +26,8 @@ protoc \
   --go-vtproto_opt=features=marshal+unmarshal+size \
   client.proto
 
-cp github.com/centrifugal/protocol/client.pb.go client.pb.go
-cp github.com/centrifugal/protocol/client_vtproto.pb.go client_vtproto.pb.go
+cp github.com/chainstream-io/protocol/client.pb.go client.pb.go
+cp github.com/chainstream-io/protocol/client_vtproto.pb.go client_vtproto.pb.go
 rm -rf github.com
 
 gomodifytype -file client.pb.go -all -w -from "[]byte" -to "Raw"
